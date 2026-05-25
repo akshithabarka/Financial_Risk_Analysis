@@ -33,20 +33,21 @@ if st.button("Predict"):
         "EmploymentType": employment
     }
 
-    # Send request to FastAPI
+    # Send request to deployed FastAPI backend
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://loan-risk-api.onrender.com/predict",
         json=data
     )
 
-    # Get response
+    # Convert response to JSON
     result = response.json()
 
-    # Display result
+    # Show prediction
     st.success(
         f"Loan Status: {result['prediction']}"
     )
 
+    # Show probability
     st.write(
         f"Approval Probability: {result['probability']:.2f}"
     )
