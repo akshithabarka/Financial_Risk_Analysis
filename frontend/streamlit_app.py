@@ -35,7 +35,7 @@ if st.button("Predict"):
 
     # Send request to deployed FastAPI backend
     response = requests.post(
-        "https://loan-risk-api.onrender.com/predict",
+        "https://loan-risk-prediction-rwvi.onrender.com/predict",
         json=data
     )
 
