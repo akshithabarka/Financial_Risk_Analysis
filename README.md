@@ -246,7 +246,7 @@ Developed an end-to-end Financial Risk Analysis System using Machine Learning to
 
 # Author
 
-Bandi Brahmma Reddy
+Barka Akshitha
 =======
 # Financial_Risk_Analysis
 >>>>>>> 7777238ead2c988b9d10ec6beefedf06b548281f
